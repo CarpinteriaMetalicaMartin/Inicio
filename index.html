@@ -8,34 +8,44 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* --- ESTILO PROFESIONAL MANTENIDO --- */
+			/* --- ESTILO PROFESIONAL ACLARADO --- */
 
+			/* Fondos de secciones principales (Gris Perla muy suave) */
 			.wrapper.style1, .wrapper.style3, #footer, #menu {
-			    background-color: #1e242a !important; /* Gris Carbón */
-			    background-image: none !important;
-			    color: #ffffff !important; /* <--- ESTA LÍNEA arregla el color del texto */
+				background-color: #f4f7f9 !important; 
+				background-image: none !important;
+				color: #333333 !important; /* Texto oscuro para legibilidad */
 			}
 			
-			/* Y añade esta regla justo debajo para asegurar los párrafos */
+			/* Asegurar párrafos en secciones claras */
 			.wrapper.style1 p, .wrapper.style3 p {
-			    color: #ffffff !important;
+				color: #444444 !important;
 			}
 
-			/* Sección de servicios (alterna) */
+			/* Sección de servicios (Gris un pelín más marcado para contraste) */
 			.wrapper.style2 {
-				background-color: #242c35 !important; /* Gris un poco más claro */
+				background-color: #e9eff3 !important; 
 				background-image: none !important;
+				color: #333333 !important;
+			}
+			.wrapper.style2 .content {
+				color: #333333 !important;
 			}
 
-			/* Banner principal (tinte sobre la foto) */
+			/* Banner principal (tinte más claro y azulado) */
 			#banner {
-				background-image: linear-gradient(rgba(30, 36, 42, 0.5), rgba(30, 36, 42, 0.8)), url('images/portada.jpg') !important;
+				background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)), url('images/portada.jpg') !important;
+			}
+			#banner h2, #banner p {
+				color: #ffffff !important; /* El banner mantiene texto blanco por la foto */
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 			}
 
-			/* Sección de contacto (CTA) */
+			/* Sección de contacto (CTA) - Un azul acero suave */
 			.wrapper.style4 {
-				background-color: #1b2025 !important;
+				background-color: #d1dbe4 !important;
 				background-image: none !important;
+				color: #2c3e50 !important;
 			}
 
 			/* Botón WhatsApp */
@@ -48,9 +58,14 @@
 			}
 			.button.whatsapp:hover { background-color: #128C7E !important; }
 
-			/* Títulos y acentos */
+			/* Títulos y acentos (Azul Industrial Oscuro para que resalten) */
 			h2, h3, b, strong {
-				color: #ffffff !important;
+				color: #2c3e50 !important;
+			}
+			
+			/* Ajuste de iconos para que se vean en el fondo claro */
+			.features li:before {
+				color: #316395 !important;
 			}
 		</style>
 	</head>
