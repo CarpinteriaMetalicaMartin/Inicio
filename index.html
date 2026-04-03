@@ -8,79 +8,15 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-		    /* --- ESTILO INDUSTRIAL BLINDADO (TEXTOS VISIBLES) --- */
-		    
-		    /* Fondo general y forzar color de texto oscuro */
-		    body, #page-wrapper, .wrapper.style1, .wrapper.style3 {
-		        background-color: #f4f4f4 !important;
-		        background-image: none !important;
-		        color: #222222 !important; /* Gris casi negro para máxima legibilidad */
-		    }
-		
-		    /* Asegurar que TODOS los párrafos y listas sean visibles */
-		    p, li, span, label {
-		        color: #333333 !important;
-		    }
-		
-		    /* Títulos en Azul Acero Oscuro */
-		    h1, h2, h3, h4, .major h2, strong, b {
-		        color: #1a252f !important;
-		        letter-spacing: 0.05em;
-		    }
-		
-		    /* Secciones de servicios (Azul Oscuro con texto BLANCO para contrastar) */
-		    .wrapper.style2 {
-		        background-color: #1a252f !important;
-		        color: #ffffff !important;
-		    }
-		    .wrapper.style2 h2, .wrapper.style2 p, .wrapper.style2 b {
-		        color: #ffffff !important;
-		    }
-		
-		    /* Cabecera (Menú Superior) */
-		    #header {
-		        background-color: #1a252f !important; /* Fondo oscuro para que resalte el logo blanco */
-		    }
-		    #header h1 a, #header .menuToggle {
-		        color: #ffffff !important;
-		    }
-		
-		    /* --- BOTONES --- */
-		    
-		    /* Botón Llamar (Azul Profesional) */
-		    .button.primary-steel {
-		        background-color: #2c3e50 !important;
-		        color: #ffffff !important;
-		        border: 1px solid #ffffff !important;
-		    }
-		
-		    /* Botón WhatsApp */
-		    .button.whatsapp {
-		        background-color: #25D366 !important;
-		        color: #ffffff !important;
-		        border: none !important;
-		    }
-		
-		    /* Sección de contacto (CTA) */
-		    #cta {
-		        background-color: #222222 !important;
-		        background-image: none !important;
-		    }
-		    #cta h2, #cta p, #cta b {
-		        color: #ffffff !important;
-		    }
-		
-		    /* Iconos de la cuadrícula (Features) */
-		    .features li:before {
-		        color: #2c3e50 !important;
-		    }
-		
-		    /* Footer */
-		    #footer {
-		        background-color: #e0e0e0 !important;
-		        color: #666666 !important;
-		        background-image: none !important;
-		    }
+			.button.whatsapp { 
+				background-color: #25D366 !important; 
+				color: #fff !important;
+				box-shadow: none !important;
+				font-weight: bold;
+			}
+			.button.whatsapp:hover { 
+				background-color: #128C7E !important;
+			}
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -90,62 +26,124 @@
 						<nav id="nav">
 							<ul style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0;">
 								<li style="margin-right: 0.8em; padding: 0; border: none; display: flex; gap: 8px;">
-									<a href="index.html" title="Español" style="border: none; padding: 0;"><img src="https://flagcdn.com/w40/es.png" style="width: 22px;"></a>
-									<a href="en/index.html" title="English" style="border: none; opacity: 0.4; padding: 0;"><img src="https://flagcdn.com/w40/gb.png" style="width: 22px;"></a>
+									<a href="index.html" title="Español" style="border: none; padding: 0;">
+										<img src="https://flagcdn.com/w40/es.png" alt="Español" style="width: 22px; height: auto; display: block;">
+									</a>
+									<a href="en/index.html" title="English" style="border: none; opacity: 0.4; padding: 0;">
+										<img src="https://flagcdn.com/w40/gb.png" alt="English" style="width: 22px; height: auto; display: block;">
+									</a>
 								</li>
 								<li class="special" style="padding: 0; border: none;">
-									<a href="#menu" class="menuToggle"><span>Menú</span></a>
+									<a href="#menu" class="menuToggle" style="display: block; padding: 0 0.5em;"><span>Menú</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Inicio</a></li>
+											<li><a href="#aboutus">Nosotros</a></li>
+											<li><a href="#services">Servicios</a></li>
+											<li><a href="#contact">Contacto</a></li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 						</nav>
 				</header>
 
-				<section id="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/portada.jpg');">
+				<section id="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/portada.jpg'); background-size: cover;">
 						<div class="inner">
 							<h2>Antonio Martín e Hijo</h2>
-							<p>Carpintería Metálica de Precisión<br />Aluminio, PVC y Hierro.</p>
+							<p>Carpintería Metálica, Aluminio y PVC<br />
+							Especialistas en cerramientos.</p>
 						</div>
-						<a href="#one" class="more scrolly">Descubrir servicios</a>
+						<a href="#aboutus" class="more scrolly">Saber más</a>
 				</section>
 
-				<section id="one" class="wrapper style1 special">
+				<section id="aboutus" class="wrapper style1 special">
 					<div class="inner">
 						<header class="major">
-							<h2>Tradición Familiar, Acabado Industrial</h2>
-							<p>Especialistas en <strong>cerramientos de alta eficiencia</strong> y estructuras metálicas a medida en Almería.</p>
+							<h2>Maestros del Metal y la Confianza</h2>
+							<p>Somos una <strong>empresa familiar</strong> especializada en carpintería metálica y cerrajería. Nos encargamos de todos los cerramientos de su hogar: ventanas de alta eficiencia, puertas seccionales motorizadas, estructuras de hierro, trabajos en aluminio a medida y mucho más.</p>
+							<p>Combinamos <strong>técnicas tradicionales</strong> con los mejores materiales para garantizar acabados impecables y la máxima durabilidad.</p>
 						</header>
 					</div>
 				</section>
 
-				<section id="two" class="wrapper alt style2">
+				<section id="services" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/ventanas.jpg" alt="" /></div><div class="content">
-								<h2>Ventanas de Alta Gama</h2>
-								<p>PVC y Aluminio con rotura de puente térmico.</p>
+							<div class="image"><img src="images/ventanas.jpg" alt="Ventanas" /></div><div class="content">
+								<h2>Ventanas de Alta Eficiencia</h2>
+								<p>Instalamos ventanas de PVC y Aluminio, cerramientos térmicos y <b>mosquiteras (enrollables y correderas)</b> para proteger su hogar con la mayor durabilidad.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/cerrajeria.jpg" alt="" /></div><div class="content">
-								<h2>Hierro y Cerrajería</h2>
-								<p>Seguridad y estética en cada forja.</p>
+							<div class="image"><img src="images/cerrajeria.jpg" alt="Cerrajería" /></div><div class="content">
+								<h2>Hierro y Cerrajería a medida</h2>
+								<p>Expertos en todo tipo de carpintería metálica: rejas, puertas, estructuras de hierro y proyectos personalizados adaptados a sus necesidades.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/motores.jpg" alt="Motores" /></div><div class="content">
+								<h2>Puertas Seccionales y Motores</h2>
+								<p>Automatizamos sus accesos con motores de última generación y puertas seccionales robustas, combinando seguridad y comodidad.</p>
 							</div>
 						</section>
 				</section>
 
-				<section id="cta" class="wrapper style4">
-						<div class="inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-							<h2>Solicite Presupuesto</h2>
-							<p>Atención directa de lunes a viernes.</p>
-							<ul class="actions stacked">
-								<li><a href="tel:606126892" class="button fit primary-steel">Llamar ahora</a></li>
-								<li><a href="https://wa.me/34606126892" class="button fit whatsapp">WhatsApp</a></li>
+				<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>¿Qué necesita?</h2>
+								<p>Cubrimos todas las ramas del sector del metal. Pídanos presupuesto sin compromiso; estamos aquí para ayudarle.</p>
+							</header>
+							<ul class="features">
+								<li class="icon solid fa-door-open">
+									<h3>Puertas y Ventanas</h3>
+									<p>Aluminio y PVC con los mejores perfiles del mercado.</p>
+								</li>
+								<li class="icon solid fa-hammer">
+									<h3>Carpintería Metálica</h3>
+									<p>Hierro, estructuras y reparaciones metálicas profesionales.</p>
+								</li>
+								<li class="icon solid fa-bug">
+									<h3>Mosquiteras</h3>
+									<p>Sistemas enrollables, correderos y fijos hechos a medida.</p>
+								</li>
+								<li class="icon solid fa-cog">
+									<h3>Automatismos</h3>
+									<p>Instalación y mantenimiento de puertas motorizadas.</p>
+								</li>
 							</ul>
 						</div>
 				</section>
 
+				<section id="contact" class="wrapper style4">
+					<div class="inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+						<header style="margin-bottom: 2em; padding-right: 0; width: 100%;">
+							<h2 style="margin-bottom: 0.5em;">Contacte con nosotros</h2>
+							<p>Ubicados en Ruescas (Almería).<br />
+							Horario de atención: Lunes a Viernes de <b>07:00 a 17:00</b>.</p>
+						</header>
+						<ul class="actions stacked" style="margin: 0 auto; width: 100%; max-width: 300px;">
+							<li><a href="tel:606126892" class="button fit" style="background-color: #316395 !important; color: #ffffff !important; border: none !important; box-shadow: none !important; font-weight: bold;">Llamar ahora</a></li>
+							<li><a href="https://wa.me/34606126892?text=Hola,%20he%20visto%20vuestra%20pagina%20web%20y%20me%20gustaria%20tener%20mas%20información" class="button fit whatsapp">WhatsApp</a></li>
+						</ul>
+					</div>
+				</section>
+
 				<footer id="footer">
-					<ul class="copyright"><li>&copy; Antonio Martín e Hijo</li><li>Ruescas, Almería</li></ul>
+					<ul class="copyright">
+						<li>&copy; Antonio Martín e Hijo</li><li>Ubicación: Ruescas, Almería</li>
+					</ul>
 				</footer>
+
 		</div>
-		</body>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
