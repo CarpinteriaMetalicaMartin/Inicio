@@ -1,132 +1,174 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpintería Metálica - Antonio Martín e Hijo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <style>
-        :root {
-            --nc-lk-1: #25d366; /* Color WhatsApp */
-            --nc-tx-1: #333;
-        }
-        body { max-width: 800px; margin: auto; padding: 20px; background-color: #f9f9f9; }
-        header { text-align: center; padding: 40px 0; background: #fff; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h1 { color: #1a1a1a; margin-bottom: 10px; }
-        
-        /* Galería de imágenes sencilla */
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .galeria img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover; /* Recorta las fotos para que todas midan lo mismo */
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .galeria img:hover { transform: scale(1.03); }
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
 
-        /* Sección de contacto destacada */
-        .contacto-card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            border: 2px solid #eee;
-        }
-        .btn-whatsapp {
-            background: #25D366;
-            color: white !important;
-            padding: 18px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-        }
-        
-        /* Botón flotante para móvil */
-        .float-ws {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 100;
-        }
-        color-scheme: light;
-    </style>
-</head>
-<body>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <header>
-        <h1>Antonio Martín e Hijo</h1>
-        <p><strong>Carpintería Metálica • Almería</strong></p>
-        <p style="color: #666;"><i>Maestros del metal, aluminio y PVC. Tradición y confianza en cada trabajo.</i></p>
-    </header>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Spectral</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-    <main>
-        <section>
-            <h2>Sobre nosotros</h2>
-            <p>Somos una empresa familiar especialista en cerramientos. Trabajamos el <b>hierro, aluminio y PVC</b> con la precisión artesanal de siempre, adaptándonos a las nuevas tecnologías y materiales de alta eficiencia.</p>
-        </section>
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Spectral</h2>
+							<p>Another fine responsive<br />
+							site template freebie<br />
+							crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button primary">Activate</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-        <section>
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li><b>Ventanas Acústicas:</b> Aislamiento térmico y sonoro de alta eficiencia.</li>
-                <li><b>Cerrajería:</b> Puertas, rejas y estructuras de hierro a medida.</li>
-                <li><b>Automatismos:</b> Puertas seccionales y motores de última generación.</li>
-                <li><b>Aluminio:</b> Cerramientos de terrazas, balcones y mucho más.</li>
-            </ul>
-        </section>
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Arcu aliquet vel lobortis ata nisl<br />
+								eget augue amet aliquet nisl cep donec</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
 
-        <section>
-            <h2>Trabajos Recientes</h2>
-            <div class="galeria">
-                <img src="https://via.placeholder.com/400x300?text=Ventana+PVC" alt="Trabajo 1">
-                <img src="https://via.placeholder.com/400x300?text=Puerta+Hierro" alt="Trabajo 2">
-                <img src="https://via.placeholder.com/400x300?text=Cerrajería" alt="Trabajo 3">
-            </div>
-        </section>
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>Magna primis lobortis<br />
+								sed ullamcorper</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Tortor dolore feugiat<br />
+								elementum magna</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Augue eleifend aliquet<br />
+								sed condimentum</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+					</section>
 
-        <br>
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Accumsan mus tortor nunc aliquet</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane">
+									<h3>Arcu accumsan</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon solid fa-laptop">
+									<h3>Ac Augue Eget</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon solid fa-code">
+									<h3>Mus Scelerisque</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon solid fa-headphones-alt">
+									<h3>Mauris Imperdiet</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-heart">
+									<h3>Aenean Primis</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-flag">
+									<h3>Tortor Ut</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <section class="contacto-card">
-            <h3>¿Necesitas un presupuesto?</h3>
-            <p>Escríbenos ahora por WhatsApp o llámanos directamente. Te atenderemos sin compromiso.</p>
-            
-            <a href="https://wa.me/34606126892 class="btn-whatsapp">
-                📱 Contactar por WhatsApp
-            </a>
-            
-            <p style="margin-top: 20px;">O llámanos al: <br><a href="tel:606126892" style="font-size: 1.4rem; font-weight: bold; color: #1a1a1a;">606126892</a></p>
-            <p><small>📍 Ruescas, Almería</small></p>
-        </section>
-    </main>
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Arcue ut vel commodo</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+							</header>
+							<ul class="actions stacked">
+								<li><a href="#" class="button fit primary">Activate</a></li>
+								<li><a href="#" class="button fit">Learn More</a></li>
+							</ul>
+						</div>
+					</section>
 
-    <footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
-        <p>© 2026 Carpintería Metálica Antonio Martín e Hijo</p>
-    </footer>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-    <a href="https://wa.me/34606126892" class="float-ws">
-        <span style="color:white; font-size: 30px;">💬</span>
-    </a>
+			</div>
 
-</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
